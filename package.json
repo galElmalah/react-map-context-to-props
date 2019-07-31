@@ -1,0 +1,44 @@
+{
+  "name": "react-with-memo",
+  "version": "1.0.4",
+  "description": "Prevent unnecessary renders with ease!",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepare": "npm test build && npm run build",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "build": "tsc && echo 'Finished building NPM package'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galElmalah/react-with-memo"
+  },
+  "types": "index.d.ts",
+  "peerDependencies": {
+    "react": "^16.8.0-0"
+  },
+  "keywords": [
+    "memo",
+    "renders"
+  ],
+  "author": "Gal Elmalah & Sela Marjan Almog",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galElmalah/react-with-memo/issues"
+  },
+  "homepage": "https://github.com/galElmalah/react-with-memo#readme",
+  "devDependencies": {
+    "@types/enzyme": "^3.9.1",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.14",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "jest": "^24.7.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {}
+}
