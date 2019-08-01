@@ -18,9 +18,9 @@ export function contextMapperSetup(context : Context < any >) {
   *   your component will now re render only when someDerivedState ref changes
   */
   return function mapContextToProps(Component : ComponentType < any >, mapStateToProps : (state : any) => MapStringToAny) {
-    return function mapContextToProps(props : MapStringToAny) {
+    return function MapContextToProps(props : MapStringToAny) {
       const contextState = mapStateToProps(React.useContext(context));
-      (mapContextToProps as any).displayName = `mapContextToProps(${Component.displayName || 'Component'})`
+      (mapContextToProps as any).displayName = `MapContextToProps(${Component.displayName || 'Component'})`
       return React.useMemo(() => {
         return <Component {...contextState} {...props}/>;
       }, Object.values({
