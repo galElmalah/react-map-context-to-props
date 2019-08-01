@@ -4,7 +4,7 @@
   "description": "Prevent unnecessary renders with ease!",
   "main": "./dist/index.js",
   "scripts": {
-    "prepare": "npm test build && npm run build",
+    "prepare": "npm test && npm run build",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "build": "tsc && echo 'Finished building NPM package'"
