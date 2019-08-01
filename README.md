@@ -10,6 +10,13 @@ Using **react-map-context-to-props** can help prevents most of them!
 
 ## How
 
+*Installation*
+```npm
+npm install react-map-context-to-props -S
+```
+
+*Usage Example*
+
 ```javascript 
 import * as React from 'react';
 import { contextMapperSetup } from 'react-map-context-to-props';
