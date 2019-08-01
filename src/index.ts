@@ -1,3 +1,2 @@
-import { memoSetup, withMemo } from './memoSetup';
-export { memoSetup, withMemo };
- 
+import {contextMapperSetup, mapContextToProps} from './contextMapperSetup';
+export {contextMapperSetup, mapContextToProps};

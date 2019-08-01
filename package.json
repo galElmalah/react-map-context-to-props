@@ -1,5 +1,5 @@
 {
-  "name": "react-with-memo",
+  "name": "react-map-context-to-props",
   "version": "1.0.4",
   "description": "Prevent unnecessary renders with ease!",
   "main": "./dist/index.js",

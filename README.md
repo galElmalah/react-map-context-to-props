@@ -1,4 +1,4 @@
-# REACT-WITH-MEMO
+# REACT-MAP-CONTEXT-TO-PROPS
 ## What
 
 Prevent unnecessary renders with ease!
@@ -6,13 +6,13 @@ Prevent unnecessary renders with ease!
 ## Why
 
 Managing your app state using context can cause a lot of unnecessary renders.  
-Using **react-with-memo** can help prevents most of them!
+Using **react-map-context-to-props** can help prevents most of them!
 
 ## How
 
 ```javascript 
 import * as React from 'react';
-import { memoSetup } from 'react-with-memo';
+import { contextMapperSetup } from 'react-map-context-to-props';
 
 const Context = React.createContext({});
 
@@ -27,20 +27,20 @@ const Provider = ({ children }) => {
   );
 };
 
-const withMemo = memoSetup(Context);
+const mapContextToProps = contextMapperSetup(Context);
 
 function Id({ id, setId }) {
   return <p data-hook="id" onClick={() => setId(Math.random())}>{id}</p>;
 };
 
-const MemoId = withMemo(Id, ({ id, setId }) => ({ id, setId }));
+const ConnectedId = mapContextToProps(Id, ({ id, setId }) => ({ id, setId }));
 
 function Name({ name, setName }) {
   return <p data-hook={'name'} onClick={() => setName("sd")}>{name}</p>;
 };
 
 
-const MemoName = withMemo(Name, ({ name, setName }) => ({ name, setName }));
+const ConnectedName = mapContextToProps(Name, ({ name, setName }) => ({ name, setName }));
 
 
 
@@ -48,9 +48,9 @@ function App() {
   return (
     <Provider>
         // will only render when prop, id, or setId change
-        <MemoId prop={0} />
+        <ConnectedId prop={0} />
         // will only render when name, or setName change
-        <MemoName />
+        <ConnectedName />
     </Provider>
   );
 }
