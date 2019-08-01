@@ -1,10 +1,10 @@
 {
-  "name": "react-with-memo",
+  "name": "react-map-context-to-props",
   "version": "1.0.4",
   "description": "Prevent unnecessary renders with ease!",
   "main": "./dist/index.js",
   "scripts": {
-    "prepare": "npm test build && npm run build",
+    "prepare": "npm test && npm run build",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "build": "tsc && echo 'Finished building NPM package'"
