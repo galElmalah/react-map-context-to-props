@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/galElmalah/react-with-memo"
+    "url": "https://github.com/galElmalah/react-map-context-to-props"
   },
   "types": "index.d.ts",
   "peerDependencies": {
@@ -24,9 +24,9 @@
   "author": "Gal Elmalah & Sela Marjan Almog",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/galElmalah/react-with-memo/issues"
+    "url": "https://github.com/galElmalah/react-map-context-to-props/issues"
   },
-  "homepage": "https://github.com/galElmalah/react-with-memo#readme",
+  "homepage": "https://github.com/galElmalah/react-map-context-to-props#readme",
   "devDependencies": {
     "@types/enzyme": "^3.9.1",
     "@types/enzyme-adapter-react-16": "^1.0.5",
